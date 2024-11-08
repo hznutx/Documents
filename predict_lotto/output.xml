@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.0 on darwin)" generated="2024-11-08T18:17:03.428930" rpa="false" schemaversion="5">
+<suite id="s1" name="Predict Lotto" source="/Users/hzn/Documents/predict_lotto/predict_lotto.robot">
+<test id="s1-t1" name="Open Browser And Search" line="9">
+<kw name="New Browser" owner="Browser">
+<msg time="2024-11-08T18:17:04.930610" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/hzn/Documents/predict_lotto/browser/traces/cfb9bf03-8c9b-4ebb-b6c4-390032c4dee5"}</msg>
+<msg time="2024-11-08T18:17:05.501790" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/hzn/Documents/predict_lotto/browser/traces/cfb9bf03-8c9b-4ebb-b6c4-390032c4dee5"}</msg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-11-08T18:17:04.929190" elapsed="0.573730"/>
+</kw>
+<kw name="Set Browser Timeout" owner="Browser">
+<msg time="2024-11-08T18:17:05.506586" level="INFO">No context open.</msg>
+<arg>timeout=150s</arg>
+<tag>Config</tag>
+<tag>Setter</tag>
+<doc>Sets the timeout used by most input and getter keywords.</doc>
+<status status="PASS" start="2024-11-08T18:17:05.503610" elapsed="0.003070"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2024-11-08T18:17:07.284348" level="INFO">Successfully initialized new page object and opened url: https://lottery.kapook.com/view286136.html</msg>
+<msg time="2024-11-08T18:17:07.284396" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>https://lottery.kapook.com/view286136.html</arg>
+<arg>wait_until=domcontentloaded</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-11-08T18:17:05.506975" elapsed="1.777501"/>
+</kw>
+<kw name="Get Property" owner="Browser">
+<msg time="2024-11-08T18:17:07.320451" level="INFO">Property: '\xa0 \xa0 \xa0 \xa0 \xa0\xa0เลขชุด 2 ตัวบน เต็ง - โต๊ด ได้แก่ 42, 43, 46, 47, 48, 82, 83, 86, 87'</msg>
+<msg time="2024-11-08T18:17:07.320551" level="INFO">${text} =           เลขชุด 2 ตัวบน เต็ง - โต๊ด ได้แก่ 42, 43, 46, 47, 48, 82, 83, 86, 87</msg>
+<var>${text}</var>
+<arg>div.content.lead-tracker &gt; div:nth-child(21)</arg>
+<arg>property=innerText</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the ``property`` of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-08T18:17:07.284658" elapsed="0.035907"/>
+</kw>
+<kw name="Get Regexp Matches" owner="String">
+<msg time="2024-11-08T18:17:07.321254" level="INFO">${text} = ['42', '43', '46', '47', '48', '82', '83', '86', '87']</msg>
+<var>${text}</var>
+<arg>${text.strip()}</arg>
+<arg>\\b(\\d{2})\\b</arg>
+<doc>Returns a list of all non-overlapping matches in the given string.</doc>
+<status status="PASS" start="2024-11-08T18:17:07.320724" elapsed="0.000544"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${text}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-08T18:17:07.321356" elapsed="0.000091"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Go To" owner="Browser">
+<msg time="2024-11-08T18:17:09.980073" level="INFO">Successfully opened URL https://astro.meemodel.com/%E0%B8%A7%E0%B8%B4%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%B0%E0%B8%AB%E0%B9%8C%E0%B9%80%E0%B8%A5%E0%B8%82%E0%B8%AB%E0%B8%A7%E0%B8%A2/</msg>
+<arg>https://astro.meemodel.com/%E0%B8%A7%E0%B8%B4%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%B0%E0%B8%AB%E0%B9%8C%E0%B9%80%E0%B8%A5%E0%B8%82%E0%B8%AB%E0%B8%A7%E0%B8%A2/</arg>
+<arg>wait_until=domcontentloaded</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2024-11-08T18:17:07.321716" elapsed="2.658569"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-11-08T18:17:09.980814" level="INFO">Fills the text '42' in the given field.</msg>
+<arg>input.form-control</arg>
+<arg>${item}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-11-08T18:17:09.980475" elapsed="0.029956"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>button.btn &gt;&gt; text="วิเคราะห์เลขหวยนี้"</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-08T18:17:10.010626" elapsed="0.041452"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-11-08T18:17:12.407950" level="INFO">Waited for Element with selector div:nth-child(3) &gt; div:nth-child(2)&gt; div &gt; div:nth-child(1) &gt; strong &gt;&gt; text="42 ออกล่าสุดเมื่อ" at state visible</msg>
+<arg>div:nth-child(3) &gt; div:nth-child(2)&gt; div &gt; div:nth-child(1) &gt; strong &gt;&gt; text="${item} ออกล่าสุดเมื่อ"</arg>
+<arg>timeout=15s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-11-08T18:17:10.052235" elapsed="2.355805"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-11-08T18:17:12.421698" level="INFO">Text: '0.72 %'</msg>
+<msg time="2024-11-08T18:17:12.421784" level="INFO">${percen} = 0.72 %</msg>
+<var>${percen}</var>
+<arg>div.resultlotto.pd-2 &gt; div:nth-child(3) &gt; div:nth-child(2) &gt; div:nth-child(3) &gt; div:nth-child(6)</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-08T18:17:12.408184" elapsed="0.013613"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>หมายเลข${item} คิดเป็น(%)ของงวดทั้งหมด:${percen}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-08T18:17:12.421922" elapsed="0.000141"/>
+</kw>
+<var name="${item}">42</var>
+<status status="PASS" start="2024-11-08T18:17:07.321655" elapsed="5.100435"/>
+</iter>
+<iter>
+<kw name="Go To" owner="Browser">
+<msg time="2024-11-08T18:17:12.581361" level="INFO">Successfully opened URL https://astro.meemodel.com/%E0%B8%A7%E0%B8%B4%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%B0%E0%B8%AB%E0%B9%8C%E0%B9%80%E0%B8%A5%E0%B8%82%E0%B8%AB%E0%B8%A7%E0%B8%A2/</msg>
+<arg>https://astro.meemodel.com/%E0%B8%A7%E0%B8%B4%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%B0%E0%B8%AB%E0%B9%8C%E0%B9%80%E0%B8%A5%E0%B8%82%E0%B8%AB%E0%B8%A7%E0%B8%A2/</arg>
+<arg>wait_until=domcontentloaded</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2024-11-08T18:17:12.422227" elapsed="0.159331"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-11-08T18:17:12.581990" level="INFO">Fills the text '43' in the given field.</msg>
+<arg>input.form-control</arg>
+<arg>${item}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-11-08T18:17:12.581705" elapsed="0.058622"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>button.btn &gt;&gt; text="วิเคราะห์เลขหวยนี้"</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-08T18:17:12.640452" elapsed="0.271039"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-11-08T18:17:15.227406" level="INFO">Waited for Element with selector div:nth-child(3) &gt; div:nth-child(2)&gt; div &gt; div:nth-child(1) &gt; strong &gt;&gt; text="43 ออกล่าสุดเมื่อ" at state visible</msg>
+<arg>div:nth-child(3) &gt; div:nth-child(2)&gt; div &gt; div:nth-child(1) &gt; strong &gt;&gt; text="${item} ออกล่าสุดเมื่อ"</arg>
+<arg>timeout=15s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-11-08T18:17:12.911748" elapsed="2.315866"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-11-08T18:17:15.250223" level="INFO">Text: '1.08 %'</msg>
+<msg time="2024-11-08T18:17:15.250319" level="INFO">${percen} = 1.08 %</msg>
+<var>${percen}</var>
+<arg>div.resultlotto.pd-2 &gt; div:nth-child(3) &gt; div:nth-child(2) &gt; div:nth-child(3) &gt; div:nth-child(6)</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-08T18:17:15.227791" elapsed="0.022542"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>หมายเลข${item} คิดเป็น(%)ของงวดทั้งหมด:${percen}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-08T18:17:15.250480" elapsed="0.000142"/>
+</kw>
+<var name="${item}">43</var>
+<status status="PASS" start="2024-11-08T18:17:12.422172" elapsed="2.828477"/>
+</iter>
+<iter>
+<kw name="Go To" owner="Browser">
+<msg time="2024-11-08T18:17:15.433081" level="INFO">Successfully opened URL https://astro.meemodel.com/%E0%B8%A7%E0%B8%B4%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%B0%E0%B8%AB%E0%B9%8C%E0%B9%80%E0%B8%A5%E0%B8%82%E0%B8%AB%E0%B8%A7%E0%B8%A2/</msg>
+<arg>https://astro.meemodel.com/%E0%B8%A7%E0%B8%B4%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%B0%E0%B8%AB%E0%B9%8C%E0%B9%80%E0%B8%A5%E0%B8%82%E0%B8%AB%E0%B8%A7%E0%B8%A2/</arg>
+<arg>wait_until=domcontentloaded</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2024-11-08T18:17:15.250778" elapsed="0.182382"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-11-08T18:17:15.433539" level="INFO">Fills the text '46' in the given field.</msg>
+<arg>input.form-control</arg>
+<arg>${item}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-11-08T18:17:15.433287" elapsed="0.056397"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>button.btn &gt;&gt; text="วิเคราะห์เลขหวยนี้"</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-08T18:17:15.489808" elapsed="0.026381"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-11-08T18:17:17.961730" level="INFO">Waited for Element with selector div:nth-child(3) &gt; div:nth-child(2)&gt; div &gt; div:nth-child(1) &gt; strong &gt;&gt; text="46 ออกล่าสุดเมื่อ" at state visible</msg>
+<arg>div:nth-child(3) &gt; div:nth-child(2)&gt; div &gt; div:nth-child(1) &gt; strong &gt;&gt; text="${item} ออกล่าสุดเมื่อ"</arg>
+<arg>timeout=15s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-11-08T18:17:15.516340" elapsed="2.447822"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-11-08T18:17:18.016576" level="INFO">Text: '0.96 %'</msg>
+<msg time="2024-11-08T18:17:18.016737" level="INFO">${percen} = 0.96 %</msg>
+<var>${percen}</var>
+<arg>div.resultlotto.pd-2 &gt; div:nth-child(3) &gt; div:nth-child(2) &gt; div:nth-child(3) &gt; div:nth-child(6)</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-08T18:17:17.968294" elapsed="0.048456"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>หมายเลข${item} คิดเป็น(%)ของงวดทั้งหมด:${percen}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-08T18:17:18.016895" elapsed="0.000190"/>
+</kw>
+<var name="${item}">46</var>
+<status status="PASS" start="2024-11-08T18:17:15.250727" elapsed="2.766387"/>
+</iter>
+<iter>
+<kw name="Go To" owner="Browser">
+<msg time="2024-11-08T18:17:18.208371" level="INFO">Successfully opened URL https://astro.meemodel.com/%E0%B8%A7%E0%B8%B4%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%B0%E0%B8%AB%E0%B9%8C%E0%B9%80%E0%B8%A5%E0%B8%82%E0%B8%AB%E0%B8%A7%E0%B8%A2/</msg>
+<arg>https://astro.meemodel.com/%E0%B8%A7%E0%B8%B4%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%B0%E0%B8%AB%E0%B9%8C%E0%B9%80%E0%B8%A5%E0%B8%82%E0%B8%AB%E0%B8%A7%E0%B8%A2/</arg>
+<arg>wait_until=domcontentloaded</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2024-11-08T18:17:18.017642" elapsed="0.191129"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-11-08T18:17:18.213273" level="INFO">Fills the text '47' in the given field.</msg>
+<arg>input.form-control</arg>
+<arg>${item}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-11-08T18:17:18.209276" elapsed="0.118157"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>button.btn &gt;&gt; text="วิเคราะห์เลขหวยนี้"</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-08T18:17:18.327585" elapsed="0.038749"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-11-08T18:17:20.672969" level="INFO">Waited for Element with selector div:nth-child(3) &gt; div:nth-child(2)&gt; div &gt; div:nth-child(1) &gt; strong &gt;&gt; text="47 ออกล่าสุดเมื่อ" at state visible</msg>
+<arg>div:nth-child(3) &gt; div:nth-child(2)&gt; div &gt; div:nth-child(1) &gt; strong &gt;&gt; text="${item} ออกล่าสุดเมื่อ"</arg>
+<arg>timeout=15s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-11-08T18:17:18.366468" elapsed="2.306754"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-11-08T18:17:20.685630" level="INFO">Text: '0.72 %'</msg>
+<msg time="2024-11-08T18:17:20.685747" level="INFO">${percen} = 0.72 %</msg>
+<var>${percen}</var>
+<arg>div.resultlotto.pd-2 &gt; div:nth-child(3) &gt; div:nth-child(2) &gt; div:nth-child(3) &gt; div:nth-child(6)</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-08T18:17:20.673548" elapsed="0.012214"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>หมายเลข${item} คิดเป็น(%)ของงวดทั้งหมด:${percen}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-08T18:17:20.685934" elapsed="0.000233"/>
+</kw>
+<var name="${item}">47</var>
+<status status="PASS" start="2024-11-08T18:17:18.017467" elapsed="2.668736"/>
+</iter>
+<iter>
+<kw name="Go To" owner="Browser">
+<msg time="2024-11-08T18:17:20.840469" level="INFO">Successfully opened URL https://astro.meemodel.com/%E0%B8%A7%E0%B8%B4%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%B0%E0%B8%AB%E0%B9%8C%E0%B9%80%E0%B8%A5%E0%B8%82%E0%B8%AB%E0%B8%A7%E0%B8%A2/</msg>
+<arg>https://astro.meemodel.com/%E0%B8%A7%E0%B8%B4%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%B0%E0%B8%AB%E0%B9%8C%E0%B9%80%E0%B8%A5%E0%B8%82%E0%B8%AB%E0%B8%A7%E0%B8%A2/</arg>
+<arg>wait_until=domcontentloaded</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2024-11-08T18:17:20.686375" elapsed="0.154174"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-11-08T18:17:20.841160" level="INFO">Fills the text '48' in the given field.</msg>
+<arg>input.form-control</arg>
+<arg>${item}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-11-08T18:17:20.840907" elapsed="0.060083"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>button.btn &gt;&gt; text="วิเคราะห์เลขหวยนี้"</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-08T18:17:20.901109" elapsed="0.036628"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-11-08T18:17:23.237964" level="INFO">Waited for Element with selector div:nth-child(3) &gt; div:nth-child(2)&gt; div &gt; div:nth-child(1) &gt; strong &gt;&gt; text="48 ออกล่าสุดเมื่อ" at state visible</msg>
+<arg>div:nth-child(3) &gt; div:nth-child(2)&gt; div &gt; div:nth-child(1) &gt; strong &gt;&gt; text="${item} ออกล่าสุดเมื่อ"</arg>
+<arg>timeout=15s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-11-08T18:17:20.937871" elapsed="2.300248"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-11-08T18:17:23.260448" level="INFO">Text: '0.96 %'</msg>
+<msg time="2024-11-08T18:17:23.260568" level="INFO">${percen} = 0.96 %</msg>
+<var>${percen}</var>
+<arg>div.resultlotto.pd-2 &gt; div:nth-child(3) &gt; div:nth-child(2) &gt; div:nth-child(3) &gt; div:nth-child(6)</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-08T18:17:23.238360" elapsed="0.022230"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>หมายเลข${item} คิดเป็น(%)ของงวดทั้งหมด:${percen}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-08T18:17:23.260757" elapsed="0.000195"/>
+</kw>
+<var name="${item}">48</var>
+<status status="PASS" start="2024-11-08T18:17:20.686304" elapsed="2.574694"/>
+</iter>
+<iter>
+<kw name="Go To" owner="Browser">
+<msg time="2024-11-08T18:17:23.418333" level="INFO">Successfully opened URL https://astro.meemodel.com/%E0%B8%A7%E0%B8%B4%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%B0%E0%B8%AB%E0%B9%8C%E0%B9%80%E0%B8%A5%E0%B8%82%E0%B8%AB%E0%B8%A7%E0%B8%A2/</msg>
+<arg>https://astro.meemodel.com/%E0%B8%A7%E0%B8%B4%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%B0%E0%B8%AB%E0%B9%8C%E0%B9%80%E0%B8%A5%E0%B8%82%E0%B8%AB%E0%B8%A7%E0%B8%A2/</arg>
+<arg>wait_until=domcontentloaded</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2024-11-08T18:17:23.261206" elapsed="0.157206"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-11-08T18:17:23.418811" level="INFO">Fills the text '82' in the given field.</msg>
+<arg>input.form-control</arg>
+<arg>${item}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-11-08T18:17:23.418546" elapsed="0.058035"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>button.btn &gt;&gt; text="วิเคราะห์เลขหวยนี้"</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-08T18:17:23.476719" elapsed="0.264998"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-11-08T18:17:26.074112" level="INFO">Waited for Element with selector div:nth-child(3) &gt; div:nth-child(2)&gt; div &gt; div:nth-child(1) &gt; strong &gt;&gt; text="82 ออกล่าสุดเมื่อ" at state visible</msg>
+<arg>div:nth-child(3) &gt; div:nth-child(2)&gt; div &gt; div:nth-child(1) &gt; strong &gt;&gt; text="${item} ออกล่าสุดเมื่อ"</arg>
+<arg>timeout=15s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-11-08T18:17:23.742024" elapsed="2.332246"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-11-08T18:17:26.093958" level="INFO">Text: '1.32 %'</msg>
+<msg time="2024-11-08T18:17:26.094078" level="INFO">${percen} = 1.32 %</msg>
+<var>${percen}</var>
+<arg>div.resultlotto.pd-2 &gt; div:nth-child(3) &gt; div:nth-child(2) &gt; div:nth-child(3) &gt; div:nth-child(6)</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-08T18:17:26.074498" elapsed="0.019603"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>หมายเลข${item} คิดเป็น(%)ของงวดทั้งหมด:${percen}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-08T18:17:26.094274" elapsed="0.000207"/>
+</kw>
+<var name="${item}">82</var>
+<status status="PASS" start="2024-11-08T18:17:23.261123" elapsed="2.833407"/>
+</iter>
+<iter>
+<kw name="Go To" owner="Browser">
+<msg time="2024-11-08T18:17:26.256711" level="INFO">Successfully opened URL https://astro.meemodel.com/%E0%B8%A7%E0%B8%B4%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%B0%E0%B8%AB%E0%B9%8C%E0%B9%80%E0%B8%A5%E0%B8%82%E0%B8%AB%E0%B8%A7%E0%B8%A2/</msg>
+<arg>https://astro.meemodel.com/%E0%B8%A7%E0%B8%B4%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%B0%E0%B8%AB%E0%B9%8C%E0%B9%80%E0%B8%A5%E0%B8%82%E0%B8%AB%E0%B8%A7%E0%B8%A2/</arg>
+<arg>wait_until=domcontentloaded</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2024-11-08T18:17:26.094743" elapsed="0.162045"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-11-08T18:17:26.257155" level="INFO">Fills the text '83' in the given field.</msg>
+<arg>input.form-control</arg>
+<arg>${item}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-11-08T18:17:26.256905" elapsed="0.060241"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>button.btn &gt;&gt; text="วิเคราะห์เลขหวยนี้"</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-08T18:17:26.317269" elapsed="0.037086"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-11-08T18:17:28.655061" level="INFO">Waited for Element with selector div:nth-child(3) &gt; div:nth-child(2)&gt; div &gt; div:nth-child(1) &gt; strong &gt;&gt; text="83 ออกล่าสุดเมื่อ" at state visible</msg>
+<arg>div:nth-child(3) &gt; div:nth-child(2)&gt; div &gt; div:nth-child(1) &gt; strong &gt;&gt; text="${item} ออกล่าสุดเมื่อ"</arg>
+<arg>timeout=15s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-11-08T18:17:26.354498" elapsed="2.300727"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-11-08T18:17:28.673670" level="INFO">Text: '0.96 %'</msg>
+<msg time="2024-11-08T18:17:28.673792" level="INFO">${percen} = 0.96 %</msg>
+<var>${percen}</var>
+<arg>div.resultlotto.pd-2 &gt; div:nth-child(3) &gt; div:nth-child(2) &gt; div:nth-child(3) &gt; div:nth-child(6)</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-08T18:17:28.655461" elapsed="0.018353"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>หมายเลข${item} คิดเป็น(%)ของงวดทั้งหมด:${percen}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-08T18:17:28.673981" elapsed="0.000201"/>
+</kw>
+<var name="${item}">83</var>
+<status status="PASS" start="2024-11-08T18:17:26.094646" elapsed="2.579933"/>
+</iter>
+<iter>
+<kw name="Go To" owner="Browser">
+<msg time="2024-11-08T18:17:28.847001" level="INFO">Successfully opened URL https://astro.meemodel.com/%E0%B8%A7%E0%B8%B4%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%B0%E0%B8%AB%E0%B9%8C%E0%B9%80%E0%B8%A5%E0%B8%82%E0%B8%AB%E0%B8%A7%E0%B8%A2/</msg>
+<arg>https://astro.meemodel.com/%E0%B8%A7%E0%B8%B4%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%B0%E0%B8%AB%E0%B9%8C%E0%B9%80%E0%B8%A5%E0%B8%82%E0%B8%AB%E0%B8%A7%E0%B8%A2/</arg>
+<arg>wait_until=domcontentloaded</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2024-11-08T18:17:28.674824" elapsed="0.172255"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-11-08T18:17:28.847467" level="INFO">Fills the text '86' in the given field.</msg>
+<arg>input.form-control</arg>
+<arg>${item}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-11-08T18:17:28.847196" elapsed="0.056581"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>button.btn &gt;&gt; text="วิเคราะห์เลขหวยนี้"</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-08T18:17:28.903899" elapsed="0.030496"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-11-08T18:17:31.336087" level="INFO">Waited for Element with selector div:nth-child(3) &gt; div:nth-child(2)&gt; div &gt; div:nth-child(1) &gt; strong &gt;&gt; text="86 ออกล่าสุดเมื่อ" at state visible</msg>
+<arg>div:nth-child(3) &gt; div:nth-child(2)&gt; div &gt; div:nth-child(1) &gt; strong &gt;&gt; text="${item} ออกล่าสุดเมื่อ"</arg>
+<arg>timeout=15s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-11-08T18:17:28.934535" elapsed="2.413229"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-11-08T18:17:31.371122" level="INFO">Text: '1.44 %'</msg>
+<msg time="2024-11-08T18:17:31.371323" level="INFO">${percen} = 1.44 %</msg>
+<var>${percen}</var>
+<arg>div.resultlotto.pd-2 &gt; div:nth-child(3) &gt; div:nth-child(2) &gt; div:nth-child(3) &gt; div:nth-child(6)</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-08T18:17:31.352531" elapsed="0.018810"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>หมายเลข${item} คิดเป็น(%)ของงวดทั้งหมด:${percen}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-08T18:17:31.371492" elapsed="0.000227"/>
+</kw>
+<var name="${item}">86</var>
+<status status="PASS" start="2024-11-08T18:17:28.674724" elapsed="2.697043"/>
+</iter>
+<iter>
+<kw name="Go To" owner="Browser">
+<msg time="2024-11-08T18:17:31.527928" level="INFO">Successfully opened URL https://astro.meemodel.com/%E0%B8%A7%E0%B8%B4%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%B0%E0%B8%AB%E0%B9%8C%E0%B9%80%E0%B8%A5%E0%B8%82%E0%B8%AB%E0%B8%A7%E0%B8%A2/</msg>
+<arg>https://astro.meemodel.com/%E0%B8%A7%E0%B8%B4%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%B0%E0%B8%AB%E0%B9%8C%E0%B9%80%E0%B8%A5%E0%B8%82%E0%B8%AB%E0%B8%A7%E0%B8%A2/</arg>
+<arg>wait_until=domcontentloaded</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<status status="PASS" start="2024-11-08T18:17:31.372006" elapsed="0.156008"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-11-08T18:17:31.528433" level="INFO">Fills the text '87' in the given field.</msg>
+<arg>input.form-control</arg>
+<arg>${item}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-11-08T18:17:31.528145" elapsed="0.072872"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>button.btn &gt;&gt; text="วิเคราะห์เลขหวยนี้"</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-08T18:17:31.601145" elapsed="0.035962"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2024-11-08T18:17:33.960306" level="INFO">Waited for Element with selector div:nth-child(3) &gt; div:nth-child(2)&gt; div &gt; div:nth-child(1) &gt; strong &gt;&gt; text="87 ออกล่าสุดเมื่อ" at state visible</msg>
+<arg>div:nth-child(3) &gt; div:nth-child(2)&gt; div &gt; div:nth-child(1) &gt; strong &gt;&gt; text="${item} ออกล่าสุดเมื่อ"</arg>
+<arg>timeout=15s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2024-11-08T18:17:31.637260" elapsed="2.323183"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2024-11-08T18:17:33.981834" level="INFO">Text: '0.96 %'</msg>
+<msg time="2024-11-08T18:17:33.982050" level="INFO">${percen} = 0.96 %</msg>
+<var>${percen}</var>
+<arg>div.resultlotto.pd-2 &gt; div:nth-child(3) &gt; div:nth-child(2) &gt; div:nth-child(3) &gt; div:nth-child(6)</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-08T18:17:33.960651" elapsed="0.021423"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>หมายเลข${item} คิดเป็น(%)ของงวดทั้งหมด:${percen}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-11-08T18:17:33.982224" elapsed="0.000188"/>
+</kw>
+<var name="${item}">87</var>
+<status status="PASS" start="2024-11-08T18:17:31.371920" elapsed="2.610530"/>
+</iter>
+<var>${item}</var>
+<value>@{text}</value>
+<status status="PASS" start="2024-11-08T18:17:07.321517" elapsed="26.660982"/>
+</for>
+<kw name="Close Browser" owner="Browser">
+<msg time="2024-11-08T18:17:34.097460" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-08T18:17:33.982798" elapsed="0.114746"/>
+</kw>
+<status status="PASS" start="2024-11-08T18:17:04.923869" elapsed="29.173885"/>
+</test>
+<status status="PASS" start="2024-11-08T18:17:03.429682" elapsed="30.669546"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Predict Lotto">Predict Lotto</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

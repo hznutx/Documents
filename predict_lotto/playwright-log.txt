@@ -1,0 +1,171 @@
+{"level":30,"time":"2024-11-08T11:17:03.804Z","pid":80748,"hostname":"iMac.local","msg":"Listening on 51998"}
+{"level":30,"time":"2024-11-08T11:17:04.919Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-11-08T11:17:04.920Z","pid":80748,"hostname":"iMac.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-11-08T11:17:04.926Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-11-08T11:17:04.926Z","pid":80748,"hostname":"iMac.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-11-08T11:17:04.933Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-11-08T11:17:05.499Z","pid":80748,"hostname":"iMac.local","msg":"Adding browser to stack: chromium, version: 120.0.6099.28"}
+{"level":30,"time":"2024-11-08T11:17:05.499Z","pid":80748,"hostname":"iMac.local","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-11-08T11:17:05.499Z","pid":80748,"hostname":"iMac.local","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-11-08T11:17:05.510Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-11-08T11:17:05.510Z","pid":80748,"hostname":"iMac.local","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-11-08T11:17:05.516Z","pid":80748,"hostname":"iMac.local","msg":"Changed active context"}
+{"level":30,"time":"2024-11-08T11:17:05.893Z","pid":80748,"hostname":"iMac.local","msg":"Video path: undefined"}
+{"level":30,"time":"2024-11-08T11:17:05.893Z","pid":80748,"hostname":"iMac.local","msg":"Changed active page"}
+{"level":30,"time":"2024-11-08T11:17:07.283Z","pid":80748,"hostname":"iMac.local","msg":"End of node method newPage"}
+{"level":30,"time":"2024-11-08T11:17:07.285Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method getDomProperty"}
+{"level":30,"time":"2024-11-08T11:17:07.285Z","pid":80748,"hostname":"iMac.local","msg":"Strict mode is enabled, find Locator with div.content.lead-tracker > div:nth-child(21) in page."}
+{"level":30,"time":"2024-11-08T11:17:07.319Z","pid":80748,"hostname":"iMac.local","msg":"Retrieved dom property for element div.content.lead-tracker > div:nth-child(21) containing           เลขชุด 2 ตัวบน เต็ง - โต๊ด ได้แก่ 42, 43, 46, 47, 48, 82, 83, 86, 87"}
+{"level":30,"time":"2024-11-08T11:17:07.319Z","pid":80748,"hostname":"iMac.local","msg":"End of node method getDomProperty"}
+{"level":30,"time":"2024-11-08T11:17:07.322Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method goTo"}
+{"level":30,"time":"2024-11-08T11:17:09.979Z","pid":80748,"hostname":"iMac.local","msg":"End of node method goTo"}
+{"level":30,"time":"2024-11-08T11:17:09.982Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-11-08T11:17:09.982Z","pid":80748,"hostname":"iMac.local","msg":"Strict mode is enabled, find Locator with input.form-control in page."}
+{"level":30,"time":"2024-11-08T11:17:10.009Z","pid":80748,"hostname":"iMac.local","msg":"End of node method fillText"}
+{"level":30,"time":"2024-11-08T11:17:10.011Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-08T11:17:10.012Z","pid":80748,"hostname":"iMac.local","msg":"Strict mode is enabled, find Locator with button.btn >> text=\"วิเคราะห์เลขหวยนี้\" in page."}
+{"level":30,"time":"2024-11-08T11:17:10.051Z","pid":80748,"hostname":"iMac.local","msg":"End of node method click"}
+{"level":30,"time":"2024-11-08T11:17:10.053Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-11-08T11:17:10.053Z","pid":80748,"hostname":"iMac.local","msg":"Strict mode is enabled, find Locator with div:nth-child(3) > div:nth-child(2)> div > div:nth-child(1) > strong >> text=\"42 ออกล่าสุดเมื่อ\" in page."}
+{"level":30,"time":"2024-11-08T11:17:12.407Z","pid":80748,"hostname":"iMac.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-11-08T11:17:12.409Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method getText"}
+{"level":30,"time":"2024-11-08T11:17:12.409Z","pid":80748,"hostname":"iMac.local","msg":"Strict mode is enabled, find Locator with div.resultlotto.pd-2 > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > div:nth-child(6) in page."}
+{"level":30,"time":"2024-11-08T11:17:12.421Z","pid":80748,"hostname":"iMac.local","msg":"Retrieved text for element div.resultlotto.pd-2 > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > div:nth-child(6) containing 0.72 %"}
+{"level":30,"time":"2024-11-08T11:17:12.421Z","pid":80748,"hostname":"iMac.local","msg":"End of node method getText"}
+{"level":30,"time":"2024-11-08T11:17:12.423Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method goTo"}
+{"level":30,"time":"2024-11-08T11:17:12.580Z","pid":80748,"hostname":"iMac.local","msg":"End of node method goTo"}
+{"level":30,"time":"2024-11-08T11:17:12.582Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-11-08T11:17:12.582Z","pid":80748,"hostname":"iMac.local","msg":"Strict mode is enabled, find Locator with input.form-control in page."}
+{"level":30,"time":"2024-11-08T11:17:12.639Z","pid":80748,"hostname":"iMac.local","msg":"End of node method fillText"}
+{"level":30,"time":"2024-11-08T11:17:12.641Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-08T11:17:12.641Z","pid":80748,"hostname":"iMac.local","msg":"Strict mode is enabled, find Locator with button.btn >> text=\"วิเคราะห์เลขหวยนี้\" in page."}
+{"level":30,"time":"2024-11-08T11:17:12.910Z","pid":80748,"hostname":"iMac.local","msg":"End of node method click"}
+{"level":30,"time":"2024-11-08T11:17:12.913Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-11-08T11:17:12.913Z","pid":80748,"hostname":"iMac.local","msg":"Strict mode is enabled, find Locator with div:nth-child(3) > div:nth-child(2)> div > div:nth-child(1) > strong >> text=\"43 ออกล่าสุดเมื่อ\" in page."}
+{"level":30,"time":"2024-11-08T11:17:15.226Z","pid":80748,"hostname":"iMac.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-11-08T11:17:15.229Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method getText"}
+{"level":30,"time":"2024-11-08T11:17:15.229Z","pid":80748,"hostname":"iMac.local","msg":"Strict mode is enabled, find Locator with div.resultlotto.pd-2 > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > div:nth-child(6) in page."}
+{"level":30,"time":"2024-11-08T11:17:15.248Z","pid":80748,"hostname":"iMac.local","msg":"Retrieved text for element div.resultlotto.pd-2 > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > div:nth-child(6) containing 1.08 %"}
+{"level":30,"time":"2024-11-08T11:17:15.248Z","pid":80748,"hostname":"iMac.local","msg":"End of node method getText"}
+{"level":30,"time":"2024-11-08T11:17:15.251Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method goTo"}
+{"level":30,"time":"2024-11-08T11:17:15.432Z","pid":80748,"hostname":"iMac.local","msg":"End of node method goTo"}
+{"level":30,"time":"2024-11-08T11:17:15.434Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-11-08T11:17:15.434Z","pid":80748,"hostname":"iMac.local","msg":"Strict mode is enabled, find Locator with input.form-control in page."}
+{"level":30,"time":"2024-11-08T11:17:15.489Z","pid":80748,"hostname":"iMac.local","msg":"End of node method fillText"}
+{"level":30,"time":"2024-11-08T11:17:15.490Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-08T11:17:15.490Z","pid":80748,"hostname":"iMac.local","msg":"Strict mode is enabled, find Locator with button.btn >> text=\"วิเคราะห์เลขหวยนี้\" in page."}
+{"level":30,"time":"2024-11-08T11:17:15.515Z","pid":80748,"hostname":"iMac.local","msg":"End of node method click"}
+{"level":30,"time":"2024-11-08T11:17:15.517Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-11-08T11:17:15.517Z","pid":80748,"hostname":"iMac.local","msg":"Strict mode is enabled, find Locator with div:nth-child(3) > div:nth-child(2)> div > div:nth-child(1) > strong >> text=\"46 ออกล่าสุดเมื่อ\" in page."}
+{"level":30,"time":"2024-11-08T11:17:17.955Z","pid":80748,"hostname":"iMac.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-11-08T11:17:17.973Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method getText"}
+{"level":30,"time":"2024-11-08T11:17:17.973Z","pid":80748,"hostname":"iMac.local","msg":"Strict mode is enabled, find Locator with div.resultlotto.pd-2 > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > div:nth-child(6) in page."}
+{"level":30,"time":"2024-11-08T11:17:18.014Z","pid":80748,"hostname":"iMac.local","msg":"Retrieved text for element div.resultlotto.pd-2 > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > div:nth-child(6) containing 0.96 %"}
+{"level":30,"time":"2024-11-08T11:17:18.014Z","pid":80748,"hostname":"iMac.local","msg":"End of node method getText"}
+{"level":30,"time":"2024-11-08T11:17:18.018Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method goTo"}
+{"level":30,"time":"2024-11-08T11:17:18.206Z","pid":80748,"hostname":"iMac.local","msg":"End of node method goTo"}
+{"level":30,"time":"2024-11-08T11:17:18.221Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-11-08T11:17:18.221Z","pid":80748,"hostname":"iMac.local","msg":"Strict mode is enabled, find Locator with input.form-control in page."}
+{"level":30,"time":"2024-11-08T11:17:18.326Z","pid":80748,"hostname":"iMac.local","msg":"End of node method fillText"}
+{"level":30,"time":"2024-11-08T11:17:18.329Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-08T11:17:18.329Z","pid":80748,"hostname":"iMac.local","msg":"Strict mode is enabled, find Locator with button.btn >> text=\"วิเคราะห์เลขหวยนี้\" in page."}
+{"level":30,"time":"2024-11-08T11:17:18.365Z","pid":80748,"hostname":"iMac.local","msg":"End of node method click"}
+{"level":30,"time":"2024-11-08T11:17:18.367Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-11-08T11:17:18.367Z","pid":80748,"hostname":"iMac.local","msg":"Strict mode is enabled, find Locator with div:nth-child(3) > div:nth-child(2)> div > div:nth-child(1) > strong >> text=\"47 ออกล่าสุดเมื่อ\" in page."}
+{"level":30,"time":"2024-11-08T11:17:20.672Z","pid":80748,"hostname":"iMac.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-11-08T11:17:20.674Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method getText"}
+{"level":30,"time":"2024-11-08T11:17:20.674Z","pid":80748,"hostname":"iMac.local","msg":"Strict mode is enabled, find Locator with div.resultlotto.pd-2 > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > div:nth-child(6) in page."}
+{"level":30,"time":"2024-11-08T11:17:20.685Z","pid":80748,"hostname":"iMac.local","msg":"Retrieved text for element div.resultlotto.pd-2 > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > div:nth-child(6) containing 0.72 %"}
+{"level":30,"time":"2024-11-08T11:17:20.685Z","pid":80748,"hostname":"iMac.local","msg":"End of node method getText"}
+{"level":30,"time":"2024-11-08T11:17:20.687Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method goTo"}
+{"level":30,"time":"2024-11-08T11:17:20.840Z","pid":80748,"hostname":"iMac.local","msg":"End of node method goTo"}
+{"level":30,"time":"2024-11-08T11:17:20.841Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-11-08T11:17:20.841Z","pid":80748,"hostname":"iMac.local","msg":"Strict mode is enabled, find Locator with input.form-control in page."}
+{"level":30,"time":"2024-11-08T11:17:20.900Z","pid":80748,"hostname":"iMac.local","msg":"End of node method fillText"}
+{"level":30,"time":"2024-11-08T11:17:20.901Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-08T11:17:20.901Z","pid":80748,"hostname":"iMac.local","msg":"Strict mode is enabled, find Locator with button.btn >> text=\"วิเคราะห์เลขหวยนี้\" in page."}
+{"level":30,"time":"2024-11-08T11:17:20.937Z","pid":80748,"hostname":"iMac.local","msg":"End of node method click"}
+{"level":30,"time":"2024-11-08T11:17:20.938Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-11-08T11:17:20.938Z","pid":80748,"hostname":"iMac.local","msg":"Strict mode is enabled, find Locator with div:nth-child(3) > div:nth-child(2)> div > div:nth-child(1) > strong >> text=\"48 ออกล่าสุดเมื่อ\" in page."}
+{"level":30,"time":"2024-11-08T11:17:23.237Z","pid":80748,"hostname":"iMac.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-11-08T11:17:23.239Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method getText"}
+{"level":30,"time":"2024-11-08T11:17:23.239Z","pid":80748,"hostname":"iMac.local","msg":"Strict mode is enabled, find Locator with div.resultlotto.pd-2 > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > div:nth-child(6) in page."}
+{"level":30,"time":"2024-11-08T11:17:23.259Z","pid":80748,"hostname":"iMac.local","msg":"Retrieved text for element div.resultlotto.pd-2 > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > div:nth-child(6) containing 0.96 %"}
+{"level":30,"time":"2024-11-08T11:17:23.259Z","pid":80748,"hostname":"iMac.local","msg":"End of node method getText"}
+{"level":30,"time":"2024-11-08T11:17:23.262Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method goTo"}
+{"level":30,"time":"2024-11-08T11:17:23.417Z","pid":80748,"hostname":"iMac.local","msg":"End of node method goTo"}
+{"level":30,"time":"2024-11-08T11:17:23.419Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-11-08T11:17:23.419Z","pid":80748,"hostname":"iMac.local","msg":"Strict mode is enabled, find Locator with input.form-control in page."}
+{"level":30,"time":"2024-11-08T11:17:23.476Z","pid":80748,"hostname":"iMac.local","msg":"End of node method fillText"}
+{"level":30,"time":"2024-11-08T11:17:23.477Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-08T11:17:23.477Z","pid":80748,"hostname":"iMac.local","msg":"Strict mode is enabled, find Locator with button.btn >> text=\"วิเคราะห์เลขหวยนี้\" in page."}
+{"level":30,"time":"2024-11-08T11:17:23.740Z","pid":80748,"hostname":"iMac.local","msg":"End of node method click"}
+{"level":30,"time":"2024-11-08T11:17:23.744Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-11-08T11:17:23.744Z","pid":80748,"hostname":"iMac.local","msg":"Strict mode is enabled, find Locator with div:nth-child(3) > div:nth-child(2)> div > div:nth-child(1) > strong >> text=\"82 ออกล่าสุดเมื่อ\" in page."}
+{"level":30,"time":"2024-11-08T11:17:26.073Z","pid":80748,"hostname":"iMac.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-11-08T11:17:26.075Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method getText"}
+{"level":30,"time":"2024-11-08T11:17:26.075Z","pid":80748,"hostname":"iMac.local","msg":"Strict mode is enabled, find Locator with div.resultlotto.pd-2 > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > div:nth-child(6) in page."}
+{"level":30,"time":"2024-11-08T11:17:26.093Z","pid":80748,"hostname":"iMac.local","msg":"Retrieved text for element div.resultlotto.pd-2 > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > div:nth-child(6) containing 1.32 %"}
+{"level":30,"time":"2024-11-08T11:17:26.093Z","pid":80748,"hostname":"iMac.local","msg":"End of node method getText"}
+{"level":30,"time":"2024-11-08T11:17:26.096Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method goTo"}
+{"level":30,"time":"2024-11-08T11:17:26.256Z","pid":80748,"hostname":"iMac.local","msg":"End of node method goTo"}
+{"level":30,"time":"2024-11-08T11:17:26.257Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-11-08T11:17:26.257Z","pid":80748,"hostname":"iMac.local","msg":"Strict mode is enabled, find Locator with input.form-control in page."}
+{"level":30,"time":"2024-11-08T11:17:26.316Z","pid":80748,"hostname":"iMac.local","msg":"End of node method fillText"}
+{"level":30,"time":"2024-11-08T11:17:26.317Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-08T11:17:26.317Z","pid":80748,"hostname":"iMac.local","msg":"Strict mode is enabled, find Locator with button.btn >> text=\"วิเคราะห์เลขหวยนี้\" in page."}
+{"level":30,"time":"2024-11-08T11:17:26.353Z","pid":80748,"hostname":"iMac.local","msg":"End of node method click"}
+{"level":30,"time":"2024-11-08T11:17:26.355Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-11-08T11:17:26.355Z","pid":80748,"hostname":"iMac.local","msg":"Strict mode is enabled, find Locator with div:nth-child(3) > div:nth-child(2)> div > div:nth-child(1) > strong >> text=\"83 ออกล่าสุดเมื่อ\" in page."}
+{"level":30,"time":"2024-11-08T11:17:28.654Z","pid":80748,"hostname":"iMac.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-11-08T11:17:28.656Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method getText"}
+{"level":30,"time":"2024-11-08T11:17:28.656Z","pid":80748,"hostname":"iMac.local","msg":"Strict mode is enabled, find Locator with div.resultlotto.pd-2 > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > div:nth-child(6) in page."}
+{"level":30,"time":"2024-11-08T11:17:28.673Z","pid":80748,"hostname":"iMac.local","msg":"Retrieved text for element div.resultlotto.pd-2 > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > div:nth-child(6) containing 0.96 %"}
+{"level":30,"time":"2024-11-08T11:17:28.673Z","pid":80748,"hostname":"iMac.local","msg":"End of node method getText"}
+{"level":30,"time":"2024-11-08T11:17:28.676Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method goTo"}
+{"level":30,"time":"2024-11-08T11:17:28.846Z","pid":80748,"hostname":"iMac.local","msg":"End of node method goTo"}
+{"level":30,"time":"2024-11-08T11:17:28.847Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-11-08T11:17:28.848Z","pid":80748,"hostname":"iMac.local","msg":"Strict mode is enabled, find Locator with input.form-control in page."}
+{"level":30,"time":"2024-11-08T11:17:28.903Z","pid":80748,"hostname":"iMac.local","msg":"End of node method fillText"}
+{"level":30,"time":"2024-11-08T11:17:28.904Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-08T11:17:28.904Z","pid":80748,"hostname":"iMac.local","msg":"Strict mode is enabled, find Locator with button.btn >> text=\"วิเคราะห์เลขหวยนี้\" in page."}
+{"level":30,"time":"2024-11-08T11:17:28.933Z","pid":80748,"hostname":"iMac.local","msg":"End of node method click"}
+{"level":30,"time":"2024-11-08T11:17:28.935Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-11-08T11:17:28.935Z","pid":80748,"hostname":"iMac.local","msg":"Strict mode is enabled, find Locator with div:nth-child(3) > div:nth-child(2)> div > div:nth-child(1) > strong >> text=\"86 ออกล่าสุดเมื่อ\" in page."}
+{"level":30,"time":"2024-11-08T11:17:31.327Z","pid":80748,"hostname":"iMac.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-11-08T11:17:31.356Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method getText"}
+{"level":30,"time":"2024-11-08T11:17:31.356Z","pid":80748,"hostname":"iMac.local","msg":"Strict mode is enabled, find Locator with div.resultlotto.pd-2 > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > div:nth-child(6) in page."}
+{"level":30,"time":"2024-11-08T11:17:31.370Z","pid":80748,"hostname":"iMac.local","msg":"Retrieved text for element div.resultlotto.pd-2 > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > div:nth-child(6) containing 1.44 %"}
+{"level":30,"time":"2024-11-08T11:17:31.370Z","pid":80748,"hostname":"iMac.local","msg":"End of node method getText"}
+{"level":30,"time":"2024-11-08T11:17:31.373Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method goTo"}
+{"level":30,"time":"2024-11-08T11:17:31.527Z","pid":80748,"hostname":"iMac.local","msg":"End of node method goTo"}
+{"level":30,"time":"2024-11-08T11:17:31.529Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method fillText"}
+{"level":30,"time":"2024-11-08T11:17:31.529Z","pid":80748,"hostname":"iMac.local","msg":"Strict mode is enabled, find Locator with input.form-control in page."}
+{"level":30,"time":"2024-11-08T11:17:31.600Z","pid":80748,"hostname":"iMac.local","msg":"End of node method fillText"}
+{"level":30,"time":"2024-11-08T11:17:31.601Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method click"}
+{"level":30,"time":"2024-11-08T11:17:31.601Z","pid":80748,"hostname":"iMac.local","msg":"Strict mode is enabled, find Locator with button.btn >> text=\"วิเคราะห์เลขหวยนี้\" in page."}
+{"level":30,"time":"2024-11-08T11:17:31.636Z","pid":80748,"hostname":"iMac.local","msg":"End of node method click"}
+{"level":30,"time":"2024-11-08T11:17:31.638Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2024-11-08T11:17:31.638Z","pid":80748,"hostname":"iMac.local","msg":"Strict mode is enabled, find Locator with div:nth-child(3) > div:nth-child(2)> div > div:nth-child(1) > strong >> text=\"87 ออกล่าสุดเมื่อ\" in page."}
+{"level":30,"time":"2024-11-08T11:17:33.959Z","pid":80748,"hostname":"iMac.local","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2024-11-08T11:17:33.962Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method getText"}
+{"level":30,"time":"2024-11-08T11:17:33.962Z","pid":80748,"hostname":"iMac.local","msg":"Strict mode is enabled, find Locator with div.resultlotto.pd-2 > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > div:nth-child(6) in page."}
+{"level":30,"time":"2024-11-08T11:17:33.981Z","pid":80748,"hostname":"iMac.local","msg":"Retrieved text for element div.resultlotto.pd-2 > div:nth-child(3) > div:nth-child(2) > div:nth-child(3) > div:nth-child(6) containing 0.96 %"}
+{"level":30,"time":"2024-11-08T11:17:33.981Z","pid":80748,"hostname":"iMac.local","msg":"End of node method getText"}
+{"level":30,"time":"2024-11-08T11:17:33.983Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2024-11-08T11:17:34.008Z","pid":80748,"hostname":"iMac.local","msg":"Removed page=7da5a4af-06a9-4fc5-94be-13e647af2dd3 from context=6d67724c-6aba-4907-bf05-ecca08f0b4b2 page stack"}
+{"level":30,"time":"2024-11-08T11:17:34.096Z","pid":80748,"hostname":"iMac.local","msg":"End of node method closeBrowser"}
+{"level":30,"time":"2024-11-08T11:17:34.098Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-11-08T11:17:34.098Z","pid":80748,"hostname":"iMac.local","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:9968:15)
+    at PlaywrightServer.getActiveBrowser (/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:10588:59)
+    at PlaywrightServer.setTimeout (/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:10838:57)
+    at handleUnary (/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:852:17)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+=============================================================
+{"level":30,"time":"2024-11-08T11:17:34.102Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-11-08T11:17:34.102Z","pid":80748,"hostname":"iMac.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-11-08T11:17:34.132Z","pid":80748,"hostname":"iMac.local","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2024-11-08T11:17:34.132Z","pid":80748,"hostname":"iMac.local","msg":"End of node method closeAllBrowsers"}
